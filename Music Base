@@ -14,10 +14,10 @@ const NFTs = []
 // this function will take in some values as parameters, create an
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
-function mintNFT (_rappername, song, _album, _location) {
+function mintNFT (_name, _song, _album, _location) {
    const NFT = {
-      "rappername": _rappername,
-      "song": song,
+      "name": _name,
+      "song": _song,
       "album": _album,
       "location": _location
    }
@@ -30,7 +30,7 @@ function mintNFT (_rappername, song, _album, _location) {
 function listNFTs () {
  for(let i = 0; i < NFTs.length; i++){
    console.log("\nRank: " + (i + 1));
-   console.log("rappername: " +  NFTs[i].rappername);
+   console.log("name: " +  NFTs[i].name);
    console.log("song " + NFTs[i].song);
    console.log("album: " + NFTs[i].album);
    console.log("location: " + NFTs[i].location);
